@@ -1,0 +1,79 @@
+{{>layout/head}}
+<body id="page-top">
+{{>layout/topbar}}
+<script>
+    window.onload = function(){
+        var url = 'url("../assets/img/bg-lighthouse.jpg")';
+        document.getElementById("mainImg").style.backgroundImage = url;
+    }
+</script>
+<!-- Masthead-->
+<header id = "mainImg" class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase">Jinju bookstore</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">
+                지금 저 광활한 밤바다의<br><br>
+                어디쯤에선가<br><br>
+                나의 빛을 발견하고 누군가<br><br>
+                안도감을 느낄지도 모르니까요.<br>
+            </h2>
+            <div id="music-icon">
+                <h3 class="text-white-50">Music</h3>
+                <a class="btn btn-primary js-scroll-trigger" href="#music">음악듣기</a>
+            </div><br>
+            <div id="playlist-icon">
+                <h3 class="text-white-50">Playlist</h3>
+                <a class="btn btn-danger js-scroll-trigger" href="#about">Youtube</a>
+                <a class="btn btn-success js-scroll-trigger" href="#about">Melon</a>
+                <a class="btn btn-info js-scroll-trigger" href="#about">Genie</a>
+            </div>
+
+        </div>
+    </div>
+</header>
+<!-- music-->
+<section class="about-section text-center" id="music">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-white mb-4">진주문고를 위한 음악</h2>
+                <!--p class="text-white-50">
+                    블라블라
+                </p-->
+
+                <h3 class="text-white-50">Etude(습작)</h3>
+                <h5 class="text-white-50">곡 김진규</h5>
+                <audio autoplay controls>
+                    <source src="../assets/audio/etude.m4a" type="audio/mp3">
+                </audio><br>
+                <h3 class="text-white-50">Footfall(발걸음)</h3>
+                <h5 class="text-white-50">곡 김진규</h5>
+                <audio autoplay controls>
+                    <source src="../assets/audio/footfall.m4a" type="audio/mp3">
+                </audio><br>
+            </div>
+            <div class="col-lg-8 mx-auto">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Q3xvjIY1GsY"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+{{>layout/about-us}}
+<!-- Footer-->
+<footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright &copy; Yullyland</div></footer>
+<!-- Bootstrap core JS-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
