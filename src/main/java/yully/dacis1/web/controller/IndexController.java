@@ -10,6 +10,7 @@ import java.text.SimpleDateFormat;
 @Controller
 public class IndexController {
 
+    private int count = 0;
     @GetMapping("/")
     public String index() {
         return calcAndOutDate("jinjumungo");
@@ -26,7 +27,7 @@ public class IndexController {
     public String calcAndOutDate(String name){
         SimpleDateFormat dateFormat = new SimpleDateFormat ( "yyyy-MM-dd HH:mm:ss");
         String time = dateFormat.format (System.currentTimeMillis());
-        System.out.println(time + " " + name);
+        System.out.println(time + " " + name + " count:" + ++count);
         return name;
     }
 }
