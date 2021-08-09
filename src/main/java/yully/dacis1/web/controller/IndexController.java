@@ -12,6 +12,7 @@ import java.text.SimpleDateFormat;
 public class IndexController {
 
     private int count = 0;
+    private int count2 = 0;
     @GetMapping("/")
     public String index() {
         return calcAndOutDate("jinjumungo");
@@ -24,16 +25,29 @@ public class IndexController {
     public String sangbong() {
         return calcAndOutDate("sangbong");
     }
+    @GetMapping("/namgaram")
+    public String namegaram() {
+        return calcAndOutDate2("namgaram");
+    }
     @GetMapping("/count")
     public String count(Model model) {
         //{{count}}
-        model.addAttribute("count", count);
+        model.addAttribute("count1", count);
+        model.addAttribute("count2", count2);
         return "count";
     }
+
+
     public String calcAndOutDate(String name){
         SimpleDateFormat dateFormat = new SimpleDateFormat ( "yyyy-MM-dd HH:mm:ss");
         String time = dateFormat.format (System.currentTimeMillis());
-        System.out.println(time + " " + name + " count:" + ++count);
+        System.out.println(time + " " + name + " count1:" + ++count);
+        return name;
+    }
+    public String calcAndOutDate2(String name){
+        SimpleDateFormat dateFormat = new SimpleDateFormat ( "yyyy-MM-dd HH:mm:ss");
+        String time = dateFormat.format (System.currentTimeMillis());
+        System.out.println(time + " " + name + " count2:" + ++count2);
         return name;
     }
 }
