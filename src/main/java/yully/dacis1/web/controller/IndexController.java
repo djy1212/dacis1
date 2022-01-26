@@ -35,6 +35,11 @@ public class IndexController {
         return calcAndOutDate2("namgaram");
     }
 
+    @GetMapping("/bolero")
+    public String bolero() {
+        return calcAndOutDate2("bolero");
+    }
+
     @GetMapping("/count")
     public String count(Model model) {
         //{{count}}
