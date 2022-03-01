@@ -1,9 +1,25 @@
 {{>layout/head}}
 <body id="page-top">
-{{>layout/topbar}}
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Dacis</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>`
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#A">A_Team</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#B">B_Team</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#C">C_Team</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <script>
     window.onload = function(){
-        //var url = 'url("../assets/img/bolero/bolero.jpeg")';
+        var url = 'url("../assets/img/bolero/bolero_main_2.jpeg")';
         document.getElementById("mainImg").style.backgroundImage = url;
     }
 </script>
@@ -13,103 +29,40 @@
         <div class="mx-auto text-center">
             <br>
             <br>
-            <h1 class="mx-auto my-0 text-uppercase">볼래로공원</h1>
-            <h2 class="text-white-50 mx-auto mt-2 mb-5" >
-                <br><br>
-                볼래로<br><br>
-                춥다<br><br>
-                그대의<br><br>
-                붉으랴<br>
+            <h1 class="mx-auto my-0 text-uppercase">볼래로 거리의 BGM</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5" ><br><br>
+                적당한 햇살이 흩어지는 계절<br><br>
+                하얗게 하얗게 변함없는 네마음<br><br>
+                내게 전하던 거리
             </h2>
-            <div id="music-icon" style="opacity: 0.6;">
-                <h3 class="text-white-50">Music</h3>
-                <a class="btn btn-dark  font-weight-bold js-scroll-trigger" href="#music">음악듣기</a>
-            </div><br>
-            <div id="playlist-icon" style="opacity: 0.6;">
-                <h3 class="text-white-50">Playlist</h3>
-                <a class="btn btn-danger js-scroll-trigger" href="https://youtu.be/E_r3A7BYvrg">
-                    <img class="mw-100" style="height: 30px; width: 30px;" src="../assets/img/youtube.png"/>
-                </a>
-                <a class="btn btn-success js-scroll-trigger" href="http://kko.to/VhgqpSffT">
-                    <img class="mw-100" style="height: 30px; width: 30px;" src="../assets/img/melon.png"/>
-                </a>
-                <a class="btn btn-primary js-scroll-trigger" href="https://www.genie.co.kr/myMusic/myfolder?mxnm=32288005">
-                    <img class="mw-100" style="height: 30px; width: 30px;" src="../assets/img/genie.png" />
-                </a>
-            </div>
-
         </div>
-    </div>RR
+    </div>
 </header>
 <!-- music-->
-<section class="about-section text-center" id="music">
-    <div class="container">
-<!--        <div class="row">-->
-<!--            <script data-ad-client="ca-pub-2711426309004526" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
-<!--            <div class="col-lg-8 mx-auto">-->
-<!--                <h2 class="text-white mb-4">'남가람공원'을 위한 음악</h2>-->
-<!--                <h2 class="text-white mb-4">Music for 'Namgaram Park'</h2>-->
-<!--                <p class="text-white-50">-->
-<!--                    남가람 공원의 분위기와 장소성을 잘 담아낸 지역의 작곡가가 작곡한 음악입니다.<br>-->
-<!--                    작곡된 음악의 소유권은 모두 Yullyland에 있으며 상업적 목적을 제외한 이용은 모두 가능합니다.<br>-->
-<!--                    This is music composed by a local composer that captures the atmosphere and sense of place of Namgaram Park.<br>-->
-<!--                    All music copyright belongs to Yullyland and any use is permitted except for commercial purposes.-->
-<!--                </p>-->
-<!--                <h3 class="text-white-50">Etude</h3><h4 class="text-white-50">(습작)</h4>-->
-<!--                <h5 class="text-white-50">곡 김진규</h5>-->
-<!--                <audio controls>-->
-<!--                    <source src="../assets/audio/jinjumungo/etude.mp3" type="audio/mp3">-->
-<!--                </audio><br><br><br><br>-->
-<!--                <h3 class="text-white-50">Footfall</h3><h4 class="text-white-50">(발걸음)</h4>-->
-<!--                <h5 class="text-white-50">곡 김진규</h5>-->
-<!--                <audio controls>-->
-<!--                    <source src="../assets/audio/jinjumungo/footfall.mp3" type="audio/mp3">-->
-<!--                </audio><br><br><br><br><br><br><br><br>-->
-<!--            </div>-->
-<!--        </div>-->
-        <h2 class="text-white mb-4">'남가람공원'을 위한 영상</h2>
-        <h2 class="text-white mb-4">Video for 'Jinju Bookstore'</h2>
-        <p class="text-white-50">
-            남가람 공원이 주는 잔잔한 감동을 담아낸 영상컨텐츠입니다.<br>
-            이후 이어질 프로젝트에서 성장해갈 주인공의 마음에 귀를 기울여 보세요!<br>
-            It is video content that captures the calm emotion that Namgaram Park gives. <br>
-            Listen to the protagonist's heart who will grow in the next project!
-        </p>
-        <!-- Project Two Row-->
-        <div class="row justify-content-center no-gutters">
-            <div class="col-lg-6">
-                <div class ="embed-youtube">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QVx_cHF8jO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class ="embed-youtube">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/V2wW_Y63gJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        <br><br>
-    </div>
+<section class="projects-section bg-light text-center" id="A">
+    {{>bolero/a}}
 </section>
-<!-- 율리랜드가 바라보는 진주문고-->
+<section class="projects-section bg-dark text-center" id="B">
+    {{>bolero/b}}
+</section>
+<section class="projects-section bg-light text-center" id="C">
+    {{>bolero/c}}
+</section>
+<!-- 율리랜드의 관점>
 <section class="projects-section bg-light" id="perspective">
     <div class="container">
-        <!-- Featured Project Row-->
+        < Featured Project Row>
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/namgaram/jinjusung.png" alt="..." /></div>
+            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bolero/bolero.jpeg" alt="..." /></div>
             <div class="col-xl-4 col-lg-5">
                 <div class="featured-text text-center text-lg-left">
-                    <h4>Yullyland가 바라본 남강은?</h4>
-                    <p class="text-black-50 mb-0">
-                        수많은 어려움 속에서도<br>
-                        끝내 회복에 대한 희망을 잃지 않았던<br>
-                        진주시민들의<br>
-                        회복의 DNA가 흐르는 곳<br>
-.
+
                 </div>
             </div>
         </div>
     </div>
 </section>
-{{>layout/about-us}}
+< 율리랜드의 관점-->
 <!-- Footer-->
 <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright &copy; Yullyland</div></footer>
 <!-- Bootstrap core JS-->
